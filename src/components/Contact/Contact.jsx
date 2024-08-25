@@ -3,6 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import css from "./Contact.module.css";
 import { deleteContact } from "../../redux/contactsSlice";
+import { MdDeleteForever } from "react-icons/md";
 
 const Contact = ({ name, number, id }) => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const Contact = ({ name, number, id }) => {
         {number}
       </p>
       <button className={css.delBtn} type="button" onClick={handleDelete}>
-        Delete
+        <MdDeleteForever />
       </button>
     </li>
   );

@@ -16,14 +16,18 @@
 }
 .button {
   padding: 10px;
-  background-color: #6caaec;
-  color: black;
-  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
+  max-width: 100px;
+  font-size: smaller;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .button:hover {
-  background-color: #007bff;
+  background-color: rgb(55, 233, 55);
 }
 
 .errorText {

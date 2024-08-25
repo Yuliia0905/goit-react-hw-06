@@ -53,7 +53,7 @@ const ContactForm = () => {
           Number
           <Field
             className={css.input}
-            type="text"
+            type="tel"
             name="number"
             placeholder="050-123-45-67"
           />
